@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import axios from 'axios'
 
-var ruta = 'http://3.141.181.76:4000'
+var ruta = 'http://localhost.76:4000'
 
 const emailRegex = RegExp(
     /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
