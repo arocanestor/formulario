@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import axios from 'axios'
 
-var ruta = 'http://localhost:4000'
+var ruta = 'http://3.141.181.76:4000'
 
 const emailRegex = RegExp(
     /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
@@ -90,7 +90,7 @@ export default class NewUser extends Component {
         if (formValid(state)) {
             const log = JSON.stringify(data)
             
-            axios.post(ruta +'/api/ur1/users',
+            axios.post(ruta +'/api',
                 data
             ).then( (e) => {
                console.log(e.data)
